@@ -7,11 +7,3 @@ export function cost(bagsOfCorn) {
 
   return trips * 0.25;
 }
-
-// Valid scenarios / ACs
-/*
-Unlimeted corn - No geese
-Unlimeted geese - No corn
-
-
-*/
