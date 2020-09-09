@@ -1,3 +1,28 @@
+## Requirements
+
+## Corn
+I'm a farmer and  I need to get my corn across the river to the market. The ferry costs £0.25p per trip and I can only carry one bag across at a time. I need to be able to work out how much it will cost me to move all my stock.
+
+### Requirements
+- I need to be able to enter how many bags of corn I have and how much it will cost
+- I've heard that web apps are cool and I'd like one of those 
+- It needs to work on my smartphone 
+
+## Geese
+I've got some geese that I want to sell, I need to get them across the river as well but if I leave them with the corn they will eat it. I need to know the best way of getting all my geese and corn across the river without losing any of it given that I can only take one bag/animal across on the ferry at a time.
+
+### Additional Requirements
+- I need to be able to enter how many geese I want to transport across the river
+- I should be told whether or not it's possible to move that quantity of geese/corn
+- I should be shown a list of crossings that I should use to get all my stock to the market in one piece.
+
+## Foxes
+I've heard that people want pet foxes, I've got friendly foxes on my farm who I think would make great pets! unfortunately if I leave them alone with the geese, they will eat them! Please could you extend the app so that it will include foxes when working out a safe way to get my stock to the market?
+
+### Additional Requirements
+- I need to be able to enter how many foxes I want to transport across the river
+- I should be told whether or not it's possible to move that quantity of geese/corn/foxes
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
