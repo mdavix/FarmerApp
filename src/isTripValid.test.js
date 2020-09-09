@@ -1,3 +1,5 @@
+import { isTripValid } from './isTripValid';
+
 test('0 corn, 0 geese is valid', () => {
     expect(isTripValid(0, 0)).toBe(true);
   });
@@ -50,18 +52,3 @@ test('1 corn, 2 geese is valid', () => {
     expect(isTripValid(1, 2)).toBe(true);
   });
 
-function isTripValid(corn, numberOfGeese) {
-    if(numberOfGeese == 0 || corn == 0){
-        return true;
-    }
- 
-    if (corn >= 3 || numberOfGeese >= 3) {
-        return false;
-    }
-
-    if(numberOfGeese == 1 || corn == 1){
-        return true;
-    }
-
-    return false;
-}

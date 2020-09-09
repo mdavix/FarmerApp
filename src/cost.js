@@ -1,5 +1,5 @@
 export function cost(bagsOfCorn) {
-  if (bagsOfCorn == 0) {
+  if (bagsOfCorn === 0) {
     return 0.25;
   }
 
