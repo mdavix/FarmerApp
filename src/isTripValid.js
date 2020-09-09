@@ -1,5 +1,5 @@
 export function isTripValid(corn, numberOfGeese) {
-  if (numberOfGeese == 0 || corn == 0) {
+  if (numberOfGeese === 0 || corn === 0) {
     return true;
   }
 
@@ -7,7 +7,7 @@ export function isTripValid(corn, numberOfGeese) {
     return false;
   }
 
-  if (numberOfGeese == 1 || corn == 1) {
+  if (numberOfGeese === 1 || corn === 1) {
     return true;
   }
 
