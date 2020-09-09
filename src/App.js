@@ -1,26 +1,33 @@
-import React from 'react';
+import React, { useState }  from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { cost } from './cost';
 
 function App() {
+  const [corn, setCorn] = useState(0);
+  const [journeyCost, setJourneyCost] = useState(0);
+  const [geese, setGeese] = useState(0);
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Please enter the amount of bags of corn below:
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React Boo!
-        </a>
+        <input type="text" value={corn} onChange={(e)=>setCorn(e.target.value)}></input>
+        <p>
+          Please enter the amount of geese below:
+        </p>
+        <input type="text" value={geese} onChange={(e)=>setGeese(e.target.value)}></input>
+        <button onClick={doCalculation}>Press me</button>
+        {journeyCost}
       </header>
     </div>
   );
+
+  function doCalculation(numberOfBags){
+    setJourneyCost(cost(corn, geese));
+  }
 }
 
 export default App;

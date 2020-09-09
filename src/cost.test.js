@@ -1,12 +1,4 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
-
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+import { cost } from './cost';
 
 test('sample test', () => {
   expect(true).toBe(true);
@@ -31,14 +23,3 @@ test('3 corn is 1.25', () => {
 test('MAX corn is 4503599627370495.25', () => {
   expect(cost(Number.MAX_SAFE_INTEGER)).toBe(4503599627370495.25);
 })
-
-function cost(bagsOfCorn){
-  if(bagsOfCorn == 0)
-  {
-    return 0.25;
-  }
-
-  const trips = (bagsOfCorn*2)-1;
-
-  return trips*0.25;
-}
