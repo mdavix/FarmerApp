@@ -28,7 +28,7 @@ function App() {
   );
 
   function doCalculation(numberOfBags){
-    setJourneyValid(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost " + journeyCost : "Journey is invalid");
+    setJourneyValid(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost £" + journeyCost : "Journey is invalid");
     setJourneyCost(cost(parseInt(corn), parseInt(geese)));
   }
 }
