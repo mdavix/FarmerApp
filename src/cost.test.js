@@ -1,25 +1,14 @@
 import { cost } from './cost';
 
-test('sample test', () => {
-  expect(true).toBe(true);
-});
-
-test('0 corn is 0.25', () => {
-  expect(cost(0)).toBe(0.25);
-})
-
-test('1 corn is 0.25', () => {
-  expect(cost(1)).toBe(0.25);
-})
-
-test('2 corn is 0.75', () => {
-  expect(cost(2)).toBe(0.75);
-})
-
-test('3 corn is 1.25', () => {
-  expect(cost(3)).toBe(1.25);
-})
-
-test('MAX corn is 4503599627370495.25', () => {
-  expect(cost(Number.MAX_SAFE_INTEGER)).toBe(4503599627370495.25);
+describe('cost', () => {
+  test.each`
+    input     | expectedResult
+    ${0}      | ${0.25}
+    ${1}      | ${0.25}
+    ${2}      | ${0.75}
+    ${3}      | ${1.25}
+    ${Number.MAX_SAFE_INTEGER}      | ${4503599627370495.25}
+  `('converts $input to $expectedResult', ({ input, expectedResult }) => {
+    expect(cost(input)).toBe(expectedResult)
+  })
 })
