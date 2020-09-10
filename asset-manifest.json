@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/FarmerApp/static/css/main.5f361e03.chunk.css",
+    "main.js": "/FarmerApp/static/js/main.0d967e5c.chunk.js",
+    "main.js.map": "/FarmerApp/static/js/main.0d967e5c.chunk.js.map",
+    "runtime-main.js": "/FarmerApp/static/js/runtime-main.3dde7269.js",
+    "runtime-main.js.map": "/FarmerApp/static/js/runtime-main.3dde7269.js.map",
+    "static/js/2.e2f82d03.chunk.js": "/FarmerApp/static/js/2.e2f82d03.chunk.js",
+    "static/js/2.e2f82d03.chunk.js.map": "/FarmerApp/static/js/2.e2f82d03.chunk.js.map",
+    "index.html": "/FarmerApp/index.html",
+    "precache-manifest.f1ea58606f82bd2cf20db5454e5a2c80.js": "/FarmerApp/precache-manifest.f1ea58606f82bd2cf20db5454e5a2c80.js",
+    "service-worker.js": "/FarmerApp/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/FarmerApp/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.e2f82d03.chunk.js.LICENSE.txt": "/FarmerApp/static/js/2.e2f82d03.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3dde7269.js",
+    "static/js/2.e2f82d03.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.0d967e5c.chunk.js"
+  ]
+}
