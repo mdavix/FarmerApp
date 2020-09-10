@@ -26,8 +26,9 @@ function App() {
     </div>
   );
 
-  function doCalculation(numberOfBags){
-    setResultMessage(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost £" + cost(parseInt(corn), parseInt(geese)) : "Journey is invalid");
+  function doCalculation(){
+    const result = cost({ bagsOfCorn: parseInt(corn), numberOfGeese: parseInt(geese) });
+    setResultMessage(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost £" + result.cost : "Journey is invalid");
   }
 }
 
