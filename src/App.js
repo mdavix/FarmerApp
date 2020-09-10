@@ -6,8 +6,7 @@ import { isTripValid } from './isTripValid';
 function App() {
   const [corn, setCorn] = useState("");
   const [geese, setGeese] = useState("");
-  const [journeyCost, setJourneyCost] = useState(0);
-  const [isJourneyValid, setJourneyValid] = useState("Please enter values");
+  const [resultMessage, setResultMessage] = useState("Please enter values");
 
   return (
     <div className="App">
@@ -22,14 +21,13 @@ function App() {
         </p>
         <input type="text" value={geese} onChange={(e)=>setGeese(e.target.value)}></input>
         <button onClick={doCalculation}>Press me</button>
-        {isJourneyValid}
+        {resultMessage}
       </header>
     </div>
   );
 
   function doCalculation(numberOfBags){
-    setJourneyValid(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost £" + journeyCost : "Journey is invalid");
-    setJourneyCost(cost(parseInt(corn), parseInt(geese)));
+    setResultMessage(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost £" + cost(parseInt(corn), parseInt(geese)) : "Journey is invalid");
   }
 }
 
