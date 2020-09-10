@@ -2,6 +2,7 @@ import React, { useState }  from 'react';
 import './App.css';
 import { cost } from './cost';
 import { isTripValid } from './isTripValid';
+import { tripPlanner } from './tripPlanner';
 
 function App() {
   const [corn, setCorn] = useState("");
@@ -27,8 +28,12 @@ function App() {
   );
 
   function doCalculation(){
-    const result = cost({ bagsOfCorn: parseInt(corn), numberOfGeese: parseInt(geese) });
-    setResultMessage(isTripValid(parseInt(corn), parseInt(geese)) ? "Journey is valid and will cost £" + result.cost : "Journey is invalid");
+    const costOfJourney = cost({ bagsOfCorn: parseInt(corn), numberOfGeese: parseInt(geese) });
+    const listOfCrossings = tripPlanner({ bagsOfCorn: parseInt(corn), numberOfGeese: parseInt(geese) });
+    
+    setResultMessage(isTripValid(parseInt(corn), parseInt(geese)) 
+      ? "You should " + listOfCrossings.crossings.join(", then ") + " and it will cost you £" + costOfJourney.cost
+      : "Journey is invalid");
   }
 }
 
